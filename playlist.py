@@ -19,7 +19,7 @@ for (name, url) in songs:
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'vorbis',
         }],
-        'outtmpl': f"~/test/{name}.%(ext)s"
+        'outtmpl': f"~/Music/{name}.%(ext)s"
     }
 
     with YoutubeDL(ydl_opts) as ydl:
